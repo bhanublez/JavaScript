@@ -1,0 +1,10 @@
+//Website
+1. HTML (hyper text markup language)
+2. CSS (Design,layout, picture, attractive)
+3. JavaScript (MInd of web page)
+
+Example #human body
+--> Bone(HTML)
+--> skin (CSS)
+--> mind/brain(JS)
+

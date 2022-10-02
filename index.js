@@ -90,6 +90,10 @@ console.log(x >= y);
 console.log("Logical Operator");
 console.log(true && false)
 console.log(true && true);
+console.log(2==2||4>2)
+console.log(2==2||4<2)
+console.log(false||true)
+console.log(true||true)
 //console.log(true or false);
 //console.log(true or true);
 console.log(!true);
@@ -191,7 +195,7 @@ createdElement2 =document.createElement('b');
 createdElement2.innerText = "For Second Element!";
 tn[0].replaceChild(createdElement2,createdElement);
 //removeChile(element); --> For removing Element
-// document.domain ,links, script,images
+// document.domain ,links, script,location,URL,images
 
 //Selecting using Query
 sel =document.querySelector('.container');
@@ -199,4 +203,74 @@ console.log(sel);
 
 //for selecting all
 sell =document.querySelectorAll('.container');
-console.log(sell);
+console.log(sell);   
+
+function clicked(){
+    console.log("The button was clicked");
+}
+window.onload = function(){
+    console.log("The document is onloaded ");
+}
+
+//Events in JavaScripts
+/*firstcontainer.addEventListener('click',function(){
+document.querySelectorAll('.container')[1].innerHTML=
+"<b> I clicker on the container </b>";
+    console.log("click hua on conatiner");
+
+})
+
+firstcontainer.addEventListener('mouseover',function(){
+    console.log("mouse hua on conatiner");
+    })
+    
+
+    firstcontainer.addEventListener('mouseout',function(){
+        console.log("mouse out of conatiner");
+        })
+        */
+ let prevHTML =document.querySelectorAll('.container')[1].innerHTML;
+        firstcontainer.addEventListener('mouseup',function(){
+            console.log("mouse up on click on  conatiner");
+            document.querySelectorAll('.container')[1].innerHTML=prevHTML;
+            })
+            firstcontainer.addEventListener('mousedown',function(){
+                console.log("mouse down on click on  conatiner");
+     document.querySelectorAll('.container')[1].innerHTML=
+"<b> Welcome to hell </b>";
+                })
+ 
+                
+//Arrow Function
+/*function  summ(a,b){
+    return a+b;
+}
+sum = (a,b)=>{
+    return a+b;
+}*/  
+logkaro = ()=>{
+    console.log("Iam your log");
+    document.querySelectorAll('.container')[1].innerHTML=
+"<b> After second of tme it comed </b>";
+}
+//SetTimeout and set interval
+//clrr=setTimeout(logkaro,2000);
+//clr = setInterval(logkaro,2000); 
+//clearInterval(clr);and clearTimeout(clrr);
+
+//JavaScript localStorage
+//localStorage.setItem('name','bhanu')  localStorage.getItem('name');
+//for clearing localStorage.clear(); 
+//JSON -->JavaScript Object Notation used for exhanging of data.
+//localStorage.remove('name');
+/*
+objj = {name : "bhanu", length:1, aa:{ this:'tha"t'} };
+jso =JSON.stringify(objj);
+console.log(typeof jso);
+console.log(jso);
+parsed = JSON.parse('{"name":"bhanu","length":1,"aa":{"this":"tha\\"t"}}') ;
+console.log(parsed);
+*/
+//Template literals -Backtricks
+a=34;
+console.log('this is my $(a)');
