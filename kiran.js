@@ -74,6 +74,53 @@ var r=45;
 
 console.log(sum_A(r));
 */
+/*
+var ad=[2,"hello","yaar","Dost"];
+ad.forEach(function(element){
+document.write(element+"\t");
+})
+
+const jj=45;
+document.write(jj);
+
+let pp=0;
+while(pp<ad.length){
+    document.write(ad[pp]);
+    pp++;
+}*/
+/*
+var ad=[2,"hello","yaar","Dost"];
+console.log(ad);
+ad.pop();
+console.log(ad);
+
+ad.push("Kiram","Kiro",45);
+console.log(ad);
+
+ad.shift("Kiram");
+console.log(ad);
+
+
+ad.unshift("Donkey");
+console.log(ad);
+
+//String method
+//var ad=[2,"hello","yaar","Dost",45,"God is blast","yaar"];
+var ad="This is the best place to leave a happy happy life.";
+console.log(ad);
+console.log(ad.length);
+console.log(ad.lastIndexOf("yaar"));
+console.log(ad.slice(8,32));
+console.log(ad.replace("happy","bad"));*/
+
+//Date Function
+let mydate= new Date();
+console.log(mydate.getTime());
+console.log(mydate.getFullYear());
+console.log(mydate.getDay());
+console.log(mydate.getHours());
+console.log(mydate.getSeconds());
+
 
 
 
